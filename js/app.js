@@ -1,3 +1,23 @@
+
+function removeChild() {
+
+    var parentContainer = document.getElementById("container");
+    var div = document.getElementsByClassName("div");
+    parentContainer.removeChild(div);
+
+}
+
+var element = document.getElementById("text_box");
+element.style.backgroundColor = "red";
+
+var input = document.getElementById('inputBox');
+
+input.addEventListener('click',
+
+    alert("You clicked me!")
+
+);
+
 function login_success(response) {
 
     Cookies.set("login_token", response['data']['token']);
